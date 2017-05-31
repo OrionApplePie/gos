@@ -1,5 +1,5 @@
 var f = function(x) {
-	return Math.sin(x*x);
+	return 4/(1 + x*x);
 };
 
 // метод для частичного отрезка
@@ -30,4 +30,4 @@ function integral(a, b, eps, n) {
 	return S;
 };
 
-alert(integral(-1, 1, 0.e-5, 10));
+alert(integral(0, 1, 0.e-7, 10));
